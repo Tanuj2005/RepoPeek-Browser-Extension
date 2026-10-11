@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "GitShare",
+  "version": "1.0.0",
+  "description": "Share private GitHub repositories with secure, temporary shareable links",
+  "author": "Your Name",
+  
+  "permissions": [
+    "storage",
+    "identity",
+    "tabs",
+    "activeTab"
+  ],
+  
+  "host_permissions": [
+    "https://github.com/*",
+    "https://api.github.com/*",
+    "http://localhost:8000/*",
+    "https://*/*"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GitShare - Share Private Repos",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.png"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
+}
