@@ -1,6 +1,6 @@
 const CONFIG = {
 
-    BACKEND_URL: 'https://git-share-server-siddharthshukla48s-projects.vercel.app',
+    BACKEND_URL: 'http://localhost:8000',
     
     GITHUB_CLIENT_ID: 'Ov23liFRN3cb6YlfUXjT',
     
@@ -9,10 +9,10 @@ const CONFIG = {
     MAX_EXPIRY_DAYS: 60,
     
     // Environment - Set to 'production' before building for users
-    ENVIRONMENT: 'production',
+    ENVIRONMENT: 'development',
     
     // Debug - Set to false in production
-    DEBUG: false
+    DEBUG: true
 };
 
 // Auto-disable console logs in production

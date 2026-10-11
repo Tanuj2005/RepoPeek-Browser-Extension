@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "GitShare",
+  "name": "RepoPeek",
   "version": "1.0.0",
   "description": "Share private GitHub repositories with secure, temporary shareable links",
   "author": "Your Name",
